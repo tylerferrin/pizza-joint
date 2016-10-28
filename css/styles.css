@@ -26,12 +26,12 @@ header div .header {
   background-image: url("../img/pz.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 300px;
   padding: 0;
 }
 
 header div .header h1 {
-  padding: 90px 0;
+  padding: 40px 0;
   font-size: 20rem;
   text-shadow: .15px .15px #000;
   color: white;
@@ -52,4 +52,45 @@ header div .header h1 {
 
 .navig li a {
   font-family: 'VT323', monospace;
+}
+
+#landing-div {
+  margin-top: 25px;
+}
+
+#order-div {
+  background-color: tomato;
+  height: 500px;
+  display: none;
+}
+
+#order-row {
+  display: none;
+}
+
+
+
+.add2order {
+  margin-top: 50px;
+  font-family: 'VT323', monospace;
+  list-style: none;
+  padding-left: 0;
+}
+
+.add2order li {
+  padding: 25px 0 25px 0;
+}
+
+.add2order li a {
+  font-size: 3rem;
+  font-family: 'VT323', monospace;
+}
+
+.addtoppings {
+  display: none;
+  font-family: 'VT323', monospace;
+}
+
+select {
+  width: 200px;
 }

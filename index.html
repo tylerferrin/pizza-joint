@@ -20,15 +20,68 @@
         </div>
       </div>
         <ul class="navig">
+          <li><a id="order-start">ORDER ONLINE</a></li>
           <li><a>PIZZA</a></li>
           <li><a>JOINTS</a></li>
           <li><a>MUNCHIES</a></li>
-          <li><a>LOCATIONS</a></li>
-          <li><a>ARCADE</a></li>
+          <li><a>DRINKS</a></li>
         </ul>
     </header>
 
-    <div class="container">
+    <div class="container" id="landing-div">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="https://media.tenor.co/images/102d110a89e7f3556a7147f9f024bdd5/raw" class="img-responsive">
+        </div>
+        <div class="col-sm-4">
+          <img src="https://media.tenor.co/images/102d110a89e7f3556a7147f9f024bdd5/raw" class="img-responsive">
+        </div>
+        <div class="col-sm-4">
+          <img src="https://media.tenor.co/images/102d110a89e7f3556a7147f9f024bdd5/raw" class="img-responsive">
+        </div>
+      </div>
+    </div> <!-- END OF LANDING DIV -->
+
+
+    <div class="container" id="order-div">
+      <div class="row" id="order-row">
+        <div class="col-sm-4 add2div">
+          <ul class="add2order">
+            <li><a id="addpizza">+ Create new pizza</a></li>
+            <li><a>+ Add some munchies</a></li>
+            <li><a>+ Add some fresh "herbs"</a></li>
+            <li><a>+ Add a beverage</a></li>
+          </ul>
+        </div> <!-- END OF ADD2DIV -->
+
+        <div class="col-sm-4 addtoppings">
+          <h1> Customize your pizza: </h1>
+          <select id="pizzasize">
+            <option>SELECT A PIZZA SIZE</option>
+            <option value="small">12" - Small </option>
+            <option value="medium">16" - Medium</option>
+            <option value="large">20" - Large</option>
+          </select><br><br>
+
+          <select id="pizzacrust">
+            <option>SELECT YOUR CRUST STYLE</option>
+            <option value="thin">Thin and Crunchy </option>
+            <option value="pan">Thick and Fluffy</option>
+            <option value="stuffed">Stuffed Crust with Mozzerella</option>
+          </select><br><br>
+          <input type="checkbox" name="pizza-toppings" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="pizza-toppings" value="sausage"> Sausage<br>
+          <input type="checkbox" name="pizza-toppings" value="canadianbacon"> Canadian Bacon<br>
+          <input type="checkbox" name="pizza-toppings" value="olives"> Olives<br>
+          <input type="checkbox" name="pizza-toppings" value="mushrooms"> Mushrooms<br>
+          <input type="checkbox" name="pizza-toppings" value="peperoncinis"> Peperoncinis<br>
+          <input type="checkbox" name="pizza-toppings" value="jalapenos"> Jalapenos<br>
+          <input type="checkbox" name="pizza-toppings" value="pineapple"> Pineapple<br>
+          <input type="checkbox" name="pizza-toppings" value="fetacheese"> Feta Cheese<br>
+          <button id="add2order" type="button">Add to Order</button>
+        </div> <!-- END OF TOPPINGS DIV -->
+        
+      </div>
     </div>
 
     <footer>
