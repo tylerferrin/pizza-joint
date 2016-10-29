@@ -1,4 +1,4 @@
-* {
+header {
   font-family: 'Bangers', cursive;
 }
 
@@ -93,4 +93,13 @@ header div .header h1 {
 
 select {
   width: 200px;
+}
+
+#order-details {
+  font-family: 'VT323', monospace;
+  display: none;
+}
+
+.order-total {
+  font-family: 'VT323', monospace;
 }

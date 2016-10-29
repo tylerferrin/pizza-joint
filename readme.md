@@ -19,4 +19,4 @@ output: new pizza object inside current order
 
 SPEC
 Input: when add to order button is pressed
-Output: current order div is updated and order is displayed
+Output: total order cost is updated & Displayed
