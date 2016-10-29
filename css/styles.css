@@ -103,3 +103,17 @@ select {
 .order-total {
   font-family: 'VT323', monospace;
 }
+
+#address-div {
+  display: none;
+  font-family: 'VT323', monospace;
+
+}
+
+#address-div input {
+  margin: 20px 0 10px;
+}
+
+#address-div button {
+  margin: 20px 0;
+}

@@ -5,6 +5,8 @@ function Order() {
   this.orderItems = [];
   this.orderName;
   this.orderAddress;
+  this.orderState;
+  this.orderZip;
 }
 
 function Pizza(size, crust) {
@@ -90,7 +92,10 @@ function updateOrder(totalcost) {
   $("#order-details").append("<button type='button' id='checkout'>Checkout</button>")
 
   $("button#checkout").click(function () {
-    $(".add2div, .addtoppings").fadeOut(1000,"linear");
-  })
+    $(".add2div, .addtoppings, button#checkout").fadeOut(1000,function() {
+      $("#address-div").fadeIn(1000);
+    });
+  });
+
 
 };

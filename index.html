@@ -45,7 +45,7 @@
 
     <div class="container" id="order-div">
       <div class="row" id="order-row">
-        
+
         <div class="col-sm-4 add2div">
           <ul class="add2order">
             <li><a id="addpizza">+ Create new pizza</a></li>
@@ -57,6 +57,7 @@
 
         <div class="col-sm-4 addtoppings">
           <h1> Customize your pizza: </h1>
+          <h3> Pizza's start at $10 <br> $1 per topping </h3>
           <select id="pizzasize">
             <option>SELECT A PIZZA SIZE</option>
             <option value="small">12" - Small </option>
@@ -78,9 +79,20 @@
           <input type="checkbox" name="pizza-toppings" value="peperoncinis"> Peperoncinis<br>
           <input type="checkbox" name="pizza-toppings" value="jalapenos"> Jalapenos<br>
           <input type="checkbox" name="pizza-toppings" value="pineapple"> Pineapple<br>
-          <input type="checkbox" name="pizza-toppings" value="fetacheese"> Feta Cheese<br>
+          <input type="checkbox" name="pizza-toppings" value="fetacheese"> Feta Cheese<br><br>
           <button id="add2order" type="button">Add to Order</button>
         </div> <!-- END OF TOPPINGS DIV -->
+
+        <div class="col-sm-4" id="address-div">
+        <form class="form-group" id="address-form">
+          <h1 class="text-center text-uppercase">Delivery Address:</h1>
+          <input class="form-control" type="text" id="Name" placeholder="Name" autofocus></input>
+          <input class="form-control" type="text" id="streetaddress" placeholder="Street Address"></input>
+          <input class="form-control" type="text" id="state" placeholder="State"></input>
+          <input class="form-control" type="text" id="zip" placeholder="Zip Code"></input>
+          <button type="submit" class="" id="addressconfirm">Confirm Address</button>
+        </form>
+      </div>
 
         <div id="order-details" class="col-sm-4">
 
