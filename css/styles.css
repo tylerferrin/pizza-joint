@@ -60,8 +60,8 @@ header div .header h1 {
 
 #order-div {
   background-color: tomato;
-  height: 500px;
   display: none;
+  min-height: 500px;
 }
 
 #order-row {
