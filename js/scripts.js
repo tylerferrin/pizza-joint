@@ -25,6 +25,11 @@ Order.prototype.totalOrderCost = function() {
   return totalcost;
 };
 
+Pizza.prototype.Pizzacost = function() {
+  var pizzatotal = this.pizzaToppings.length;
+  this.cost += pizzatotal;
+};
+
 
 
 
@@ -58,8 +63,9 @@ $("document").ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       var newtoppings = $(this).val();
       newpizza.pizzaToppings.push(newtoppings);
-      newpizza.cost +=1;
     });
+
+    newpizza.Pizzacost();
 
 
     currentOrder.orderItems.push(newpizza);
