@@ -10,30 +10,20 @@
 
 _This program creates Pizza objects from drop down menus and checkboxes and pushes them into an order object and displays the Current Order on the screen._
 
-SPECIFICATIONS:
--SPEC: User clicks add to cart and pizza object is pushed into the current order
--- input: add to cart
--- output: 1 pizza object inside orderItems array
+# SPECIFICATIONS:
 
--SPEC: User selects size and crust types and those values are stored in Pizza object and pushed into the Order object
--- input: select size and crust and click to add to cart
--- output: pizza object now has string values for size and crust
+1. SPEC: When pepperoni topping is selected - pizza total is updated to $11
+- input: Pepperoni checkbox is checked -
+- output: $11 pizza cost
 
--SPEC: User can click on toppings checklist and price is updated to reflect $1 per topping checked
--- input: 1 toppings select
--- output: Cost is updated to $11
+2. SPEC: When Pepperoni, Olive, and Sausage toppings are checked pizza total is updated to $13
+- input: Pepperonie, Olive, and Sausage are checked
+- output: $13 pizza cost
 
--SPEC: User can pick as many toppings as desired and pizza object cost is added to the Order object total
--- Input: 3 toppings selected
--- Output: Pizza cost is $13 and Order Total = $13
+3. SPEC: When a first pizza of only pepperoni is added to order, and a second pepperoni, and Olive pizza is ordered - order total gives the sum of both pizza's cost
+- input: pizza with pepperoni is added to order ($11). Second pizza with Pepperoni and Olive is added ($12)
+- output: $23 Order Total
 
--SPEC: User can add a second pizza to their order by selecting different size, crust and toppings and that pizza is pushed into the Order Object orderItems array
--- Input: select new variants, and click add to Order
--- Output: a second pizza object is stored in the OrderItems array inside the Order object
-
--SPEC: When multiple pizzas are ordered the pizza costs are added together and and the total order cost is updated to reflect all pizza costs.
--- Input: 1 topping pizza $11 and 2 topping Pizza $12 are added to Order
--- Output: Order Total is updated to $23 dollars
 
 
 ## Setup/Installation Requirements
